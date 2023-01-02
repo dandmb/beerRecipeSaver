@@ -90,4 +90,52 @@ class CrudOperation {
     return ref;
   }
 
+
+
+  Future<String> addRecipe(
+      String title,
+      String description,
+      ) async {
+    DateTime now = new DateTime.now();
+    DateTime date = new DateTime(now.year, now.month, now.day);
+    var user = _auth.currentUser?.uid ?? "";
+    await _firestore
+        .collection("Recipes")
+        .doc(user)
+        .collection(user)
+        .doc(title)
+        .set({
+      'title':title,
+      'description': description,
+
+    });
+    String response="No answer";
+
+    var collection = await _firestore.collection('Recipes').doc(user)
+        .collection(user);
+    var docSnapshot = await collection.doc(title).get();
+
+    if(docSnapshot.exists){
+      response="Done successfully";
+    } else{
+      response="Something happened";
+    }
+
+    return response;
+  }
+
+  Stream<QuerySnapshot> getRecipes() {
+    var user = _auth.currentUser?.uid ?? "";
+    var ref = _firestore.collection("Recipes").doc(user).collection(user).snapshots();
+
+    return ref;
+  }
+  Future<void> removeRecipe(String docId) {
+    var user = _auth.currentUser?.uid ?? "";
+    var ref = _firestore.collection("Recipes").doc(user).collection(user).doc(docId).delete();
+    return ref;
+  }
+
+
+
 }

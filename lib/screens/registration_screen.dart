@@ -29,7 +29,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.white,
       body: Center(
         child: Form(
           key: _formKey,
@@ -46,7 +46,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     decoration: InputDecoration(labelText: 'Your Name'),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Name is required';
                       }
                       return null;
                     },
@@ -57,7 +57,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     decoration: InputDecoration(labelText: 'Email'),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Email is required';
                       }
                       return null;
                     },
@@ -68,7 +68,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     decoration: InputDecoration(labelText: 'Password'),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Password is required';
                       }
                       return null;
                     },

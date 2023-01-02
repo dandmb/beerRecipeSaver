@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.white,
       body: Center(
         child: Form(
           key: _formKey,
@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(labelText: 'Email'),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Email is required';
                       }
                       return null;
                     },
@@ -55,10 +55,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextFormField(
                     // The validator receives the text that the user has entered.
                     controller: _passwordController,
+                    obscureText: true,
+                    enableSuggestions: false,
+                    autocorrect: false,
                     decoration: InputDecoration(labelText: 'Password'),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Password is required';
                       }
                       return null;
                     },
