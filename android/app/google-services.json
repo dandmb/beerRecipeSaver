@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "414484440260",
+    "project_id": "beer-recipe",
+    "storage_bucket": "beer-recipe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414484440260:android:7eec6fb3564713afe69591",
+        "android_client_info": {
+          "package_name": "com.example.beer_recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414484440260-kg2fkucqgb94olmfs3o7p8em9372aag8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfBBWW1NC6pyDb28VrAez35TE6JKm4yqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414484440260-kg2fkucqgb94olmfs3o7p8em9372aag8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "414484440260-ag1du7n2ujlnc746f9inb0be42b260hr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.beerRecipe"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
