@@ -66,7 +66,7 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
   AlertDialog _alertDialog(DocumentSnapshot mypost, BuildContext context) {
     return AlertDialog(
       title: const Text(
-        'Delete Account',
+        'Delete Recipe',
         textAlign: TextAlign.center,
       ),
       shape: const RoundedRectangleBorder(

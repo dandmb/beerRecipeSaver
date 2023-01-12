@@ -106,6 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(content: Text('Welcome Back')),
                             );
+                            Navigator.of(context).pushReplacementNamed('/recipe');
                           });
                           _emailController.clear();
                           _passwordController.clear();

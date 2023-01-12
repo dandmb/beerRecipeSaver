@@ -121,7 +121,7 @@ class _IngredientListScreenState extends State<IngredientListScreen> {
   AlertDialog _alertDialog(DocumentSnapshot mypost, BuildContext context) {
     return AlertDialog(
       title: const Text(
-        'Delete Account',
+        'Delete Ingredient',
         textAlign: TextAlign.center,
       ),
       shape: const RoundedRectangleBorder(

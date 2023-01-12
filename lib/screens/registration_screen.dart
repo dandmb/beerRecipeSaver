@@ -99,6 +99,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(content: Text('Registration Done')),
                             );
+                            Navigator.of(context).pushReplacementNamed('/');
                           });
                           _nameController.clear();
                           _emailController.clear();
