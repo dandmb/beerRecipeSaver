@@ -37,6 +37,13 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  const Padding(
+                    padding: EdgeInsets.all(25.0),
+                    child: Text(
+                      "It's a Brew Day",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.red),
+                    ),
+                  ),
                   const Text(
                     "Please, Login",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),

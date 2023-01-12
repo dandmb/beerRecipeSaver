@@ -39,6 +39,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  const Padding(
+                    padding: EdgeInsets.all(25.0),
+                    child: Text(
+                      "It's a Brew Day",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.red),
+                    ),
+                  ),
                   const Text("Create Account",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
                   TextFormField(
                     // The validator receives the text that the user has entered.
